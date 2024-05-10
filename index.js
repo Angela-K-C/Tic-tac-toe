@@ -26,4 +26,15 @@ if(!boxes[id]){
 }
 }
 
-restartBtn.addEventListener("cllick", restart)
+restartBtn.addEventListener("cllick", restart())
+
+function restart(){
+    currentPlayer = X_entry
+    boxes.fill(null)
+    sections.forEach(function(sec){ 
+        sec.innerText=""
+    })
+
+}
+
+startGame()
