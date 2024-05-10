@@ -18,9 +18,9 @@ function handleClick(event){
         gameStatus[cellIndex] = currentPlayer
         event.target.textContent = currentPlayer
         if (checkWinner()) {
-            statusDisplay.textContent = `Player ${currentPlayer} wins!`
+            statusDisplay.textContent = `Player ${currentPlayer} wins! 🎊🎊🎉`
         } else if (checkTie()) {
-            statusDisplay.textContent = 'It\'s a tie!'
+            statusDisplay.textContent = 'It\'s a tie!🙁'
         } else {
             currentPlayer = currentPlayer === 'X' ? 'O' : 'X'
             statusDisplay.textContent = `Player ${currentPlayer}'s turn`
