@@ -26,17 +26,36 @@ if(!boxes[id]){
     e.target.innerText = currentPlayer
 
     currentPlayer = currentPlayer === X_entry? O_entry : X_entry
+    if(currentPlayerWon() {
+        playerText.textContent = `${currentPlayer} has won! Yay.`
+    })
 }
 }
 
-restartBtn.addEventListener("cllick", restart)
+    const toWin = [
+        [0, 1, 2],
+        [3, 4, 5],
+        [6, 7, 8],
+        [0, 3, 6], 
+        [1, 4, 7],
+        [2, 5, 8],
+        [0, 4, 8],
+        [2, 4, 6]
+    ]
+
+function currentPlayerWon() {
+    
+}    
+
+restartBtn.addEventListener("click", restart)
 
 function restart(){
-    currentPlayer = X_entry
     boxes.fill(null)
     sections.forEach(function(sec){ 
-        sec.innerText=""
+        sec.innerText = ""
     })
+    currentPlayer = X_entry
+    playerText.innerText= "Tic Tac Toe"
 
 }
 
