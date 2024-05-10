@@ -1,24 +1,33 @@
 body {
     background-color: rgb(243, 170, 118);
-    font-family:sans-serif
+    font-family:sans-serif;
 }
 h1 {
     text-align: center;
     color: antiquewhite;
+    font-size: px;
+    text-shadow: 2px 2px 1px rgb(175, 139, 29);
 }
 #gameboard {
     background-color: antiquewhite;
     display: grid;
     grid-template-columns: repeat(3, auto);
-    width: 260px;
+    width: 400px;
+    height: 410px;
     padding: 10px;
-    border: 10px black;
+    border: 5px rgb(73, 21, 14);
     -ms-flex-align: end;
 }
 
+p {
+    color:blanchedalmond;
+    font-size: larger;
+
+}
+
 .cell{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 120px;
     border: 5px solid;
     line-height: 120px;
     font-size: 50px;
@@ -36,7 +45,7 @@ button {
 }
 .hero {
     height: 100%;
-    width:100%
+    width:100%;
 }
 .image {
     margin-left: 5%;
