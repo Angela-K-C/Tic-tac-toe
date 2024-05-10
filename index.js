@@ -1,7 +1,9 @@
 let playerText = document.getElementById("playerText")
 let restartBtn = document.getElementById("restart-btn")
+//creates an array from the table elements
 let sections = Array.from(document.getElementsByClassName("cell"))
 
+//assigns X and O to constants
 const O_entry = "O"
 const X_entry = "X"
 let currentPlayer = X_entry
@@ -9,6 +11,7 @@ let currentPlayer = X_entry
 let boxes = Array(9).fill(null)
 
 const startGame = function(){
+//Automates the process of adding event listeners to each and every cell of that table
 sections.forEach(function(sec){
     sec.addEventListener("click", sectionClicked)
 })
@@ -26,7 +29,7 @@ if(!boxes[id]){
 }
 }
 
-restartBtn.addEventListener("cllick", restart())
+restartBtn.addEventListener("cllick", restart)
 
 function restart(){
     currentPlayer = X_entry
