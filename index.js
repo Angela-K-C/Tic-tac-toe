@@ -9,5 +9,7 @@ let currentPlayer = X_entry
 let boxes = Array(9).fill(null)
 
 const startGame = function(){
+
+
     
 }
