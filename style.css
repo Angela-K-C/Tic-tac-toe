@@ -57,3 +57,31 @@ button {
     margin-left: 5%;
 
 }
+
+@media (prefers-color-scheme: dark) {
+    body{
+        background: #000;
+        color: blue;
+    }
+
+    #gameboard {
+        background-color: black;
+        border-color: antiquewhite;
+    }
+
+    .cell{
+        border-color: blueviolet;
+    }
+
+    p {
+        color: blueviolet;
+    }
+
+    h1 {
+        color: blue;
+        text-shadow: none;
+    }
+
+
+
+}
