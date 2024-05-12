@@ -63,16 +63,16 @@ button {
 }
 
 @media (max-width: 1024px) {
-    .content {
+    .hero {
         flex-direction: column; 
-        align-items: center; /
+        align-items: center; 
     }
 
     .image {
         margin-bottom: 20px; 
     }
 
-    .table-container {
+    .table {
         margin-top: 20px; 
         margin-bottom: 20px;
     }
@@ -81,3 +81,4 @@ button {
         margin-top: 20px; 
     }
 }
+
